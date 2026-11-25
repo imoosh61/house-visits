@@ -1,0 +1,33 @@
+name: HouseVisits
+options:
+  bundleIdPrefix: com.imoosh
+  developmentLanguage: ar
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  HouseVisits:
+    type: application
+    platform: iOS
+    sources:
+      - HouseVisits
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.imoosh.housevisits
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1"
+    info:
+      path: Config/Info.plist
+      properties:
+        CFBundleDisplayName: سجل الزيارات
+        CFBundleDevelopmentRegion: ar
+        CFBundleLocalizations: [ar]
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSCameraUsageDescription: لتصوير الأعمال بعد الإنجاز
+        NSPhotoLibraryUsageDescription: لاختيار صور الأعمال بعد الإنجاز
+        NSFaceIDUsageDescription: لحماية بيانات البيوت والسكان بقفل التطبيق
